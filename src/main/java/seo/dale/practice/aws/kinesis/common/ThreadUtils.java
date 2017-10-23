@@ -1,4 +1,4 @@
-package seo.dale.practice.aws.kinesis.stream;
+package seo.dale.practice.aws.kinesis.common;
 
 import java.util.concurrent.TimeUnit;
 

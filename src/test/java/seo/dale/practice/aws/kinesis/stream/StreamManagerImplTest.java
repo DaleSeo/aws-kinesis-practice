@@ -32,12 +32,12 @@ public class StreamManagerImplTest {
 
         // List streams
         List<String> streamNames = manager.listStreams();
-        System.out.println(String.format("streamNames: %s", streamNames));
+        System.out.println(String.format("## streamNames: %s", streamNames));
         assertThat(streamNames).contains(streamName);
 
         // Get the stream
         StreamInfo streamInfo = manager.getStream(streamName);
-        System.out.println(String.format("streamInfo: %s", streamInfo));
+        System.out.println(String.format("## streamInfo: %s", streamInfo));
 
         assertThat(streamInfo.getName()).isEqualTo(streamName);
         assertThat(streamInfo.getStatus()).isEqualTo("ACTIVE");
